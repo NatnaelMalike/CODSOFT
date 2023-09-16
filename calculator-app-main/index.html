@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="bg-main">
+    <div class="calc-container grid ff-spartan ">
+      <header class="flex font-color header">
+        <div class="fs-600">calc</div>
+        <div class="theme flex">
+          <p>THEME</p>
+
+          <div class="slider grid">
+            <div class="slider-count flex">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div class="theme-slider flex bg-toggle">
+              <label for="first" class="bg-equals-key label"></label>
+              <label for="second" class="label"></label>
+              <label for="third" class="label"></label>
+              <input type="radio" name="theme" id="first" value="first" />
+              <input type="radio" name="theme" id="second" value="second" />
+              <input type="radio" name="theme" id="third" value="third" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="show-board bg-screen border-radii font-color fs-600 flex">
+        <div id="main-screen" data-current-operand>
+        </div>
+        <div class="tempo-screen tempo-font fs-500" data-previous-operand></div>
+      </div>
+      
+        <div class="btn-board grid bg-toggle border-radii">
+          <div class="row grid">
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>7</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>8</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>9</button>
+            <button class="btns fs-500 bg-reset font-color clr-reset shadow-reset" data-delete>DEL</button>
+          </div>
+          <div class="row grid">
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>4</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>5</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>6</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-operation>+</button>
+          </div>
+          <div class="row grid">
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>1</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>2</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>3</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-operation>-</button>
+          </div>
+          <div class="row grid">
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>.</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-number>0</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-operation>/</button>
+            <button class="btns fs-600 clr-number bg-number shadow-number" data-operation>x</button>
+          </div>
+          <div class="row grid">
+            <button class="btns fs-500 span-2 bg-reset clr-reset shadow-reset" data-all-clear>RESET</button>
+            <button class="btns fs-600 span-2 bg-equals-key clr-equals shadow-equals" data-equals>=</button>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body class="">
+    <header class="flex primary-header container">
+      <div class="logo">
+        <img src="./assets/picture/suitcase.png" alt="logo" />
+      </div>
+      <button class="menu-btn" aria-expanded="false"></button>
+      <nav>
+        <ul class="flex primary-nav" data-visible="false">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="bg-accent">
+        <div class="container grid home">
+          <div class="home-intro flow flex">
+            <h1 class="fs-900">
+              <span class="block fs-800">Hello Mate 👋</span>I'm Natnael Malike
+              a
+              <span class="block clr-primary">Web Developer</span>
+            </h1>
+            <p class="p-len fs-500">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+              rem.
+            </p>
+            <button class="btn flex fs-600">
+              Resume <i class="material-icons">file_download</i>
+            </button>
+          </div>
+          <div class="profile-picture"></div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container flow">
+          <header class="flow flex">
+            <h2 class="fs-800">About</h2>
+            <p class="fs-500 p-len">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laboriosam, soluta.
+            </p>
+          </header>
+          <div class="about-container grid">
+            <div class="mine-info flow">
+              <h3 class="fs-700">Get to know me!</h3>
+              <p class="me-info p-len fs-500">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+                architecto exercitationem aliquid nisi quasi est repellat labore
+                id qui tenetur omnis a temporibus. Incidunt sint illum animi
+                autem laborum totam eligendi, alias dolore sunt. Incidunt vel
+                eveniet rerum eos iure voluptatibus placeat sit corrupti cum.
+                Autem incidunt modi itaque! Velit aliquam architecto est vel
+                amet, corrupti cum quisquam, sunt,
+              </p>
+              <button class="btn fs-600">Contact</button>
+            </div>
+            <div class="skillset flow">
+              <h3 class="fs-700">My Skills</h3>
+              <ul class="skills flex">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SASS</li>
+                <li>NODE.JS</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>Mongo DB</li>
+                <li>GIT</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <div class="container flow">
+          <header class="flow flex">
+            <h2 class="fs-800">Projects</h2>
+            <p class="fs-500 p-len">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, deserunt?
+            </p>
+          </header>
+          <div class="project-container grid">
+            <article class="flow">
+              <img src="./assets/picture/embape.jpg" alt="Project thumbnail" />
+              <p class="fs-500">Title</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, harum!
+              </p>
+            </article>
+            <article class="flow">
+              <img src="./assets/picture/embape.jpg" alt="Project thumbnail" />
+              <p class="fs-500">Title</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, harum!
+              </p>
+            </article>
+            <article class="flow">
+              <img src="./assets/picture/embape.jpg" alt="Project thumbnail" />
+              <p class="fs-500">Title</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, harum!
+              </p>
+            </article>
+            <article class="flow">
+              <img src="./assets/picture/embape.jpg" alt="Project thumbnail" />
+              <p class="fs-500">Title</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, harum!
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container grid flow">
+          <header class="flow flex">
+            <h2 class="fs-800">Contact</h2>
+            <p class="fs-500 p-len">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, deserunt?
+            </p>
+          </header>
+          <form class="form-element flow container" id="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+            <button class="btn fs-500">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black container">
+      <div class="social container flex flow">
+        <div class="social-media flex">
+          <a href="#"><img src="./assets/picture/facebook (1).png" alt="Facebook Icon"></a>
+          <a href="#"><img src="./assets/picture/instagram (1).png" alt="Instagram Icon"></a>
+          <a href="#"><img src="./assets/picture/linkedin (1).png" alt="Linkedin Icon"></a>
+          <a href="#"><img src="./assets/picture/social.png" alt="Github Icon"></a>
+          <a href="#"><img src="./assets/picture/twitter (1).png" alt="Twitter Icon"></a>
+        </div>
+        <p class="clr-white">@Copyright 2023. made by Natnael Malike.</p>
+      </div>
+    </footer>
+  </body>
+</html>
